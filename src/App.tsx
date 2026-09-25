@@ -1,5 +1,5 @@
 import React from "react";
-//import "./App.css";
+//import './App.css';
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
@@ -16,15 +16,15 @@ function App(): React.JSX.Element {
             <hr></hr>
             <Counter></Counter>
             <hr />
-            <RevealAnswer></RevealAnswer>
+            {<RevealAnswer></RevealAnswer>}
             <hr />
-            <StartAttempt></StartAttempt>
+            {<StartAttempt></StartAttempt>}
             <hr />
-            <TwoDice></TwoDice>
+            {<TwoDice></TwoDice>}
             <hr />
-            <ChangeType></ChangeType>
+            {<ChangeType></ChangeType>}
             <hr />
-            <CycleHoliday></CycleHoliday>
+            {<CycleHoliday></CycleHoliday>}
         </div>
     );
 }

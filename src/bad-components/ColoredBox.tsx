@@ -4,7 +4,13 @@ import { Button } from "react-bootstrap";
 export const COLORS = ["red", "blue", "green"];
 const DEFAULT_COLOR_INDEX = 0;
 
-function ChangeColor({colorIndex,setColorIndex,}: {colorIndex: number; setColorIndex: (index: number) => void;}): React.JSX.Element {
+function ChangeColor({
+    colorIndex,
+    setColorIndex,
+}: {
+    colorIndex: number;
+    setColorIndex: (index: number) => void;
+}): React.JSX.Element {
     return (
         <Button
             onClick={() => {
@@ -16,7 +22,11 @@ function ChangeColor({colorIndex,setColorIndex,}: {colorIndex: number; setColorI
     );
 }
 
-function ColorPreview({colorIndex,}: {colorIndex: number;}): React.JSX.Element {
+function ColorPreview({
+    colorIndex,
+}: {
+    colorIndex: number;
+}): React.JSX.Element {
     return (
         <div
             data-testid="colored-box"

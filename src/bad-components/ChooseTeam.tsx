@@ -23,7 +23,6 @@ export function ChooseTeam(): React.JSX.Element {
     function clearTeam() {
         setTeam([]);
         setAllOptions(PEOPLE);
-
     }
 
     return (
@@ -34,7 +33,12 @@ export function ChooseTeam(): React.JSX.Element {
                     {allOptions.map((option: string) => (
                         <div key={option} style={{ marginBottom: "4px" }}>
                             Add{" "}
-                            <Button onClick={() => { chooseMember(option); }} size="sm">
+                            <Button
+                                onClick={() => {
+                                    chooseMember(option);
+                                }}
+                                size="sm"
+                            >
                                 {option}
                             </Button>
                         </div>
